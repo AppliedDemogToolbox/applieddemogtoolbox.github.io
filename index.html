@@ -617,8 +617,16 @@ from recursively smaller uniform distributions of model parameters to locate a b
 The sampling-based fitting process is just my own "DIY" solution (I haven't been able to find another example or reference for fitting-by-sampling done in this way, or an evaluation of it - please 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="mailto:edyhsgr@gmail.com">let me know</a> 
 if you know one, or if you have insights that might be instructive or generally helpful), 
-and it hasn't been carefully tested at all, but it's neat it appears so far to do the job pretty well (if slowly), and I think relying on uniform distribution bounds rather than single values for 
-starting-parameter selection may make the overall process of fitting the model a bit easier. To make the code work, you should be able to simply select-all, copy, and paste into an R command line 
+and it hasn't been carefully tested at all, but it's neat it appears so far to do the job pretty well (if slowly). 
+When I developed the code, I thought that using uncertain bounds as the starting parameter inputs for Rogers-Castro was novel, but I recently learned
+of an R package developed months before mine that uses uncertain bounds - indeed uniform distributions - for these,  
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/elflacosebas/migraR/" target="_blank">migraR</a>, 
+by 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://ced.uab.cat/en/directori/javier-sebastian-ruiz-santacruz/" target="_blank">J. Sebastian Ruiz-Santacruz</a> 
+and Jackson Garcés Hernández, also 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://applieddemogtoolbox.github.io/Toolbox/#migraR">listed</a> 
+on this page. I think relying on uniform distribution bounds rather than single values for starting-parameter selection may make the overall process of fitting the model easier. 
+To make the code work, you should be able to simply select-all, copy, and paste into an R command line 
 (the example input data is linked through the Internet, and can be simply downloaded for review). 
 Copies of the code with some application of and comparison to R's 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://stat.ethz.ch/R-manual/R-patched/library/stats/html/nls.html" target="_blank">nls()</a> 
@@ -626,7 +634,7 @@ and
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html" target="_blank">lm()</a> 
 functions, and to more plain Monte Carlo, are available 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/AppliedDemogToolbox/Hunsinger_SPMMSRCode/tree/master/FittingComparisons" target="_blank">here</a>. 
-&ndash;August 2018 (updated March 2019)
+&ndash;August 2018 (updated September 2019)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
