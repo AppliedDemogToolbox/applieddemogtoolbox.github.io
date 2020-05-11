@@ -184,7 +184,8 @@ placeholder="Filter by title or attribute text">
 <br><br>
 <b>
   <ul id="toolboxsearchUL"><u>Tools Maintained Here</u></br>
-  <li data-topic="migr" data-tech="r" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#SPMMSRCode">Eddie's R Code for Fitting the Multi-Exponential Model Migration Schedule with Student Peak<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
+  <li data-topic="proj" data-tech="r" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CCRStable">Eddie's Hamilton-Perry with Added Components Population Projection Code<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, R code)</p></a></li>
+  <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#SPMMSRCode">Eddie's R Code for Fitting the Multi-Exponential Model Migration Schedule with Student Peak<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
   <li data-topic="proj" data-tech="web, r"><a STYLE="text-decoration:none" href="#NextYearPop">Eddie's Next Year Population Possibilities Reviewer<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, web interface and R code)</p></a></li>
   <li data-topic="est, rev" data-tech="r"><a STYLE="text-decoration:none" href="#CountyCharacteristicsGraphing">David Howell's County Characteristics Graphing Code<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, review tools, R code)</p></a></li>
   <li data-topic="fert, age" data-tech="excel"><a STYLE="text-decoration:none" href="#ImpliedTFR">Hauer, Baker, and Brown's Implied Total Fertility Rate Calculator<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, age measures, Excel spreadsheet)</p></a></li>
@@ -411,6 +412,38 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 <br><br><br>
 <ul id="toolboxsearchUL">
 <hr>
+
+<li data-topic="proj" data-tech="r">
+<H2 id="CCRStable" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://raw.githubusercontent.com/AppliedDemogToolbox/CCRStable/master/CCRStable.R" target="_blank">Eddie's Hamilton-Perry with Added Components Population Projection Code
+<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, R code)</p></a>
+</font></strong>
+<p style="font-size:15px;display:inline;font-weight:normal">
+The 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.jstor.org/stable/2573607?seq=1" target="_blank">Hamilton-Perry method</a>, 
+which uses ratios of change in cohort sizes between two points in time 
+(<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.worldcat.org/title/cohort-change-ratios-and-their-applications/oclc/988385033" target="_blank">cohort change ratios</a>) 
+to project population, is a useful resource for population analysis, but the core method doesn't include information on the components of population change. 
+This 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.r-project.org/" target="_blank">R</a> 
+code for population projections employs cohort change ratios with optional models for fertility (iTFR &ndash; 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.r-project.org/" target="_blank">Hauer, Baker, and Brown (2013)</a> and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.r-project.org/" target="_blank">Hauer and Schmertmann (2019)</a>), 
+mortality (Brass' relational logit model &ndash; information 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://applieddemogtoolbox.github.io/Toolbox/#BrassMortality" target="_blank">here</a> and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://twitter.com/ApplDemogToolbx/status/1079286699941752832" target="_blank">here</a>), 
+and net migration (information 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://edyhsgr.github.io/eddieh/documents/ProjPresentation.pdf" target="_blank">here</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://shiny.demog.berkeley.edu/eddieh/AKPFDMigrationReview/" target="_blank">here</a> and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://shiny.demog.berkeley.edu/eddieh/NMAdjustCompare/" target="_blank">here</a>) 
+and also returns estimates of stable population growth and age structure. To make the code work, you should be able to simply select-all, copy, 
+and paste into an R command line (the example input data is linked through the Internet, and can be simply downloaded for review). 
+Additional information is available in the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://shiny.demog.berkeley.edu/eddieh/CCRStable/" target="_blank">related Shiny interface</a> and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/AppliedDemogToolbox/CCRStable" target="_blank">GitHub repository</a>. 
+&ndash;May 2020
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
 
 <li data-topic="migr" data-tech="r">
 <H2 id="migraR" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
@@ -2206,3 +2239,4 @@ can certainly send me an email at <a STYLE="text-decoration:none;display:inline;
 <br>
 
 </html>
+
