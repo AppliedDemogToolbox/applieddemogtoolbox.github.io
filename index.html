@@ -201,7 +201,6 @@ placeholder="Filter by title or attribute text">
   <li data-topic="rev" data-tech="excel"><a STYLE="text-decoration:none" href="#MAPE-R_Excel">Tom Bryan's MAPE-R Spreadsheet<p style="margin:0px;font-size:15px;font-weight:normal">(review tools, Excel spreadsheet)</p></a></li>
   <li data-topic="proj" data-tech="excel"><a STYLE="text-decoration:none" href="#CohortComponent">Tim Chapin's Cohort Component Model Spreadsheet<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, Excel spreadsheet)</p></a></li>
   <li data-topic="age" data-tech="excel"><a STYLE="text-decoration:none" href="#MedianCalculator">Doig and Hoyers' Median Calculation Spreadsheet<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, Excel spreadsheet)</p></a></li>
-  <li data-topic="migr" data-tech="excel"><a STYLE="text-decoration:none" href="#SPMMS">Tom Wilson's SPMMS: Student Peak Model Migration Schedule<p style="margin:0px;font-size:15px;font-weight:normal">(migration, Excel spreadsheet)</p></a></li>
   <li data-topic="rev" data-tech="sas"><a STYLE="text-decoration:none" href="#MAPE-R">Adapted MAPE-R Calculation Code<p style="margin:0px;font-size:15px;font-weight:normal">(review tools, SAS code)</p></a></li>
   <li data-topic="age" data-tech="excel"><a STYLE="text-decoration:none" href="#MedianAgeSpreadsheet">Tom Wilson's Median Age Calculation Spreadsheet<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, Excel spreadsheet)</p></a></li>
   <li data-topic="age" data-tech="excel"><a STYLE="text-decoration:none" href="#PRBPopulationPyramidSpreadsheets">Eddie's PRB Population Pyramid Spreadsheets<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, Excel spreadsheets)</p></a></li>
@@ -216,6 +215,7 @@ placeholder="Filter by title or attribute text">
 </ul><br><br>
   <ul id="toolboxsearchUL"><u>Tools Maintained Elsewhere</u></br>
   <li data-topic="mort" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDALCFIT">CEDA's LCFIT: The Lee-Carter Fitter<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, web interface)</p></a></li>
+  <li data-topic="migr" data-tech="excel"><a STYLE="text-decoration:none" href="#MMS">Tom Wilson's Model Migration Schedule Fitting Example<p style="margin:0px;font-size:15px;font-weight:normal">(migration, Excel spreadsheet)</p></a></li>
   <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#migraR">Ruiz-Santacruz and Garcés' migraR: Rogers and Castro Migration Models Schedule Optimization<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
   <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#IRSformat">Hauer and Byar's IRS County-to-County Migration Data, 1990 to 2010, Replication Code<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
   <li data-topic="est, fert, migr, mort, age" data-tech="r"><a STYLE="text-decoration:none" href="#DemoTools">Tim Riffe's DemoTools: Tools for the Evaluation, Adjustment, and Standardization of Demographic Data<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, fertility, migration, mortality, age measures, R code)</p></a></li>
@@ -413,6 +413,25 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 <ul id="toolboxsearchUL">
 <hr>
 
+<li data-topic="migr" data-tech="excel">
+<H2 id="MMS" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://figshare.com/articles/Model_Migration_Schedule_fitting_example/12415475" target="_blank">Tom Wilson's Model Migration Schedule Fitting Example
+<p style="margin:0px;;font-size:15px;font-weight:normal">(migration, Excel spreadsheet)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+Human migration often follows a somewhat clear and interpretable pattern by age, and very good multi-parameter models for the pattern have been developed 
+and described over the past few decades 
+(<a STYLE="text-decoration:none;display:inline;padding:0px" href="http://pure.iiasa.ac.at/id/eprint/1543/" target="_blank">Rogers and Castro, 1981</a>). 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.researchgate.net/profile/Tom_Wilson13 target="_blank">Tom Wilson</a> 
+of the University of Melbourne has extended and improved the Rogers-Castro migration model, offering both a 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.demographic-research.org/Volumes/Vol23/8/default.htm" target="_blank">student curve</a> 
+and an 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://link.springer.com/article/10.1007/s40980-020-00062-7" target="_blank">alternative post-retirement curve</a>, 
+and linked above is a related Excel workbook. I've found the workbook is immensely useful for understanding and applying the new functions, and model migration schedules in general.
+&ndash;June 2020
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+									     
 <li data-topic="proj" data-tech="r">
 <H2 id="CCRStable" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://raw.githubusercontent.com/AppliedDemogToolbox/CCRStable/master/CCRStable.R" target="_blank">Eddie's Hamilton-Perry with Components and Stable Population Information Projection Code
@@ -637,14 +656,13 @@ Model migration age schedules have been developed and described over the past fe
 (a central resource:  <a STYLE="text-decoration:none;display:inline;padding:0" href="http://pure.iiasa.ac.at/id/eprint/1543/" target="_blank">Rogers and Castro, 1981</a>), 
 and they are useful for understanding human migration, which has some recurrent patterns for childhood, labor force ages, retirement ages, and old ages. 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.researchgate.net/profile/Tom_Wilson13" target="_blank">Tom Wilson</a> 
-of the University of Melbourne extended the Rogers-Castro migration model, adding a student curve  
-and an alternative post-retirement curve, and also provides terrific guidance and instruction on the overall model. This 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.r-project.org/" target="_blank">R</a>
-code uses the guidance and instruction from Dr. Wilson's 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.demographic-research.org/Volumes/Vol23/8/default.htm" target="_blank">Model Migration Schedules Incorporating Student Peaks</a> 
+of the University of Melbourne extended and improved-upon the Rogers-Castro migration model, adding both a 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.demographic-research.org/Volumes/Vol23/8/default.htm" target="_blank">student curve</a> 
 and 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="https://link.springer.com/article/10.1007/s40980-020-00062-7" target="_blank">Modelling Age Patterns of Internal Migration at the Highest Ages</a> 
-articles, and their 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://link.springer.com/article/10.1007/s40980-020-00062-7" target="_blank">alternative post-retirement curve</a>, 
+and also provides terrific guidance and instruction on the overall model. This 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.r-project.org/" target="_blank">R</a>
+code uses the guidance and instruction from Dr. Wilson's model migration schedule articles, and their 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://figshare.com/articles/Model_Migration_Schedule_fitting_example/12415475" target="_blank">related Excel workbook</a>s, 
 along with R's random number generator, and sampling 
 (<a STYLE="text-decoration:none;display:inline;padding:0" href="https://en.wikipedia.org/wiki/Monte_Carlo_method" target="_blank">Monte Carlo</a>) 
