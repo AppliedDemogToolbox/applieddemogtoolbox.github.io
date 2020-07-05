@@ -215,11 +215,12 @@ placeholder="Filter by title or attribute text">
 </ul><br><br>
   <ul id="toolboxsearchUL"><u>Tools Maintained Elsewhere</u></br>
   <li data-topic="mort" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDALCFIT">CEDA's LCFIT: The Lee-Carter Fitter<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, web interface)</p></a></li>
+  <li data-topic"est, survy, fert, migr, geog, data" data-tech="r"><a STYLE="text-decoration:none" href="#TidyCensus">Kyle Walkers's tidycensus<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, fertility, migration, geographic, data and materials, R package)</p></a></li>
   <li data-topic="age" data-tech="r"><a STYLE="text-decoration:none" href="#ThreeVariablePyramid">César Cristancho's Population Pyramid Code<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, R code)</p></a></li>
   <li data-topic="migr" data-tech="excel"><a STYLE="text-decoration:none" href="#MMSchedule">Tom Wilson's Model Migration Schedule Fitting Example<p style="margin:0px;font-size:15px;font-weight:normal">(migration, Excel spreadsheet)</p></a></li>
   <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#migraR">Ruiz-Santacruz and Garcés' migraR: Rogers and Castro Migration Models Schedule Optimization<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
   <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#IRSformat">Hauer and Byar's IRS County-to-County Migration Data, 1990 to 2010, Replication Code<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
-  <li data-topic="est, fert, migr, mort, age" data-tech="r"><a STYLE="text-decoration:none" href="#DemoTools">Tim Riffe's DemoTools: Tools for the Evaluation, Adjustment, and Standardization of Demographic Data<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, fertility, migration, mortality, age measures, R code)</p></a></li>
+  <li data-topic="est, fert, migr, mort, age" data-tech="r"><a STYLE="text-decoration:none" href="#DemoTools">Tim Riffe's DemoTools: Tools for the Evaluation, Adjustment, and Standardization of Demographic Data<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, fertility, migration, mortality, age measures, R package)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#GetUSAMortData">Sam Clark's Get USA Mortality Data<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
   <li data-topic="geog" data-tech="web, excel"><a STYLE="text-decoration:none" href="#HUDZipCrosswalk">US Department of Housing and Urban Development's Zip Code Crosswalk Files<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, web interface)</p></a></li>
   <li data-topic="geog" data-tech="standalone"><a STYLE="text-decoration:none" href="#GoogleEarthPro">Google Earth Pro<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, stand-alone software)</p></a></li>
@@ -258,7 +259,7 @@ placeholder="Filter by title or attribute text">
   <li data-topic="est, proj, data" data-tech="excel" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CCRAppsSupporting">Baker, Swanson, Tayman, and Tedrow's Cohort Change Ratio Files<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, population projections, data and materials, Excel spreadsheets)</p></a></li> 
 </ul><br><br>
   <ul id="toolboxsearchUL"><u>Materials Maintained Elsewhere</u></br>
-  <li data-topic="est, survy, fert, migr, geog, data" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CensusData">US Census Bureau's data.census.gov<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, fertility, migration, geographic, data and materials, web interface)</p></a></li>
+  <li data-topic="survy, fert, migr, geog, data" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CensusData">US Census Bureau's data.census.gov<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, web interface)</p></a></li>
   <li data-topic="mort, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#CauseOfDeathDatabase">The Human Cause-of-Death Database<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, web interface)</p></a></li>
   <li data-topic="mort, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#CanadianMortalityDatabase">The Canadian Human Mortality Database<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, web interface)</p></a></li>
   <li data-topic="mort, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#USMortalityDatabase">The United States Mortality Database<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, web interface)</p></a></li>
@@ -414,16 +415,34 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 <ul id="toolboxsearchUL">
 <hr>
 	
+<li data-topic="survy, fert, migr, geog, data" data-tech="r">
+<H2 id="TidyCensus" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://walker-data.com/tidycensus/" target="_blank">Kyle Walker's tidycensus
+<p style="margin:0px;;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, web interface)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+From its the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://personal.tcu.edu/kylewalker/index.html" target="_blank">author</a>'s 
+webpage for it: 
+"My work heavily involves the use of data from the US Census Bureau, and like many R users, I do most of my work within the tidyverse. 
+Beyond this, the sf package now allows R users to work with spatial data in an integrated way with tidyverse tools, and updates to the tigris 
+package provide access to Census boundary data as sf objects. Recently, I’ve found myself writing the same routines over and over to get Census 
+data ready for use with tidyverse packages and sf. This motivated me to open-source these functions in a package in case other R users find them useful." 
+A fantastic resource for accessing, managing, and mapping US Census Bureau data. 
+&ndash;July 2020
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+	
 <li data-topic="est, survy, fert, migr, geog, data" data-tech="web">
 <H2 id="CensusData" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://data.census.gov/cedsci/advanced" target="_blank">US Census Bureau's data.census.gov
-<p style="margin:0px;;font-size:15px;font-weight:normal">(population estimates, surveys, fertility, migration, geographic, data and materials, web interface)</p></a>
+<p style="margin:0px;;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, web interface)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
 If you get a request for demographic data in the US, or if you have your own request for demographic data in the US, there is a good chance that you can 
 make use of the 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.census.gov" target="_blank">US Census Bureau</a>'s 
-data.census.gov. Data.census.gov has detailed data from the Census Bureau's  
+data.census.gov. Data.census.gov has detailed tables from the Census Bureau's  
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.census.gov/programs-surveys/acs/" target="_blank">American Community Survey</a> 
 as well as the 2010 Census of the United States. I am linking here to directly to the platform's "Advanced Search" page, which I think is the most helpful place to start. 
 &ndash;July 2020
