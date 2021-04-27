@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -121,7 +120,7 @@ hr {
 
 <font FACE="HELVETICA"> 
 </center><p style="margin:0px;font-size:14px">
-This Applied Demography Toolbox is a collection of applied demography computer programs, scripts, spreadsheets, databases and texts. 
+This Applied Demography Toolbox is a collection of applied demography computer programs, packages, scripts, spreadsheets, databases and texts. 
 If you use, share, or reproduce information or ideas from the linked files, please cite the respective source. 
 If you have questions, recommendations, or <a STYLE="text-decoration:none" href="#Additions">additions</a> for the page, or any comments,
 please send a message to me 
@@ -215,7 +214,9 @@ placeholder="Filter by title or attribute text">
 </ul><br><br>
   <ul id="toolboxsearchUL"><u>Tools Maintained Elsewhere</u></br>
   <li data-topic="mort" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDALCFIT">CEDA's LCFIT: The Lee-Carter Fitter<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, web interface)</p></a></li>
-  <li data-topic="survy, fert, migr, geog, data" data-tech="r"><a STYLE="text-decoration:none" href="#tidycensus">Kyle Walker's tidycensus<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, R package)</p></a></li>
+  <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#MortCast">Ševčíková, Li, and Gerland's MortCast: Estimation and Projection of Age-Specific Mortality Rates<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R package)</p></a></li>
+  <li data-topic="proj, fert, migr, mort" data-tech="r"><a STYLE="text-decoration:none" href="#bayesPop">Raftery et al's BayesPop: Probabilistic Population Projections Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, R packages)</p></a></li>
+  <li data-topic="survy, fert, migr, geog, data" data-tech="r"><a STYLE="text-decoration:none" href="#tidycensus">Kyle Walker's tidycensus<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, R packages)</p></a></li>
   <li data-topic="age" data-tech="r"><a STYLE="text-decoration:none" href="#ThreeVariablePyramid">César Cristancho's Population Pyramid Code<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, R code)</p></a></li>
   <li data-topic="migr" data-tech="excel"><a STYLE="text-decoration:none" href="#MMSchedule">Tom Wilson's Model Migration Schedule Fitting Example<p style="margin:0px;font-size:15px;font-weight:normal">(migration, Excel spreadsheet)</p></a></li>
   <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#migraR">Ruiz-Santacruz and Garcés' migraR: Rogers and Castro Migration Models Schedule Optimization<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R package)</p></a></li>
@@ -259,7 +260,8 @@ placeholder="Filter by title or attribute text">
   <li data-topic="est, proj, data" data-tech="excel" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CCRAppsSupporting">Baker, Swanson, Tayman, and Tedrow's Cohort Change Ratio Files<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, population projections, data and materials, Excel spreadsheets)</p></a></li> 
 </ul><br><br>
   <ul id="toolboxsearchUL"><u>Materials Maintained Elsewhere</u></br>
-  <li data-topic="survy, fert, migr, geog, data" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CensusData">US Census Bureau's data.census.gov<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, web interface)</p></a></li>
+  <li data-topic="est, proj, fert, migr, mort, rev, geog, hist, data" data-tech="web, excel, r" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#UNWPP">United Nations' World Population Prospects<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, population projections, fertility, migration, mortality, review tools, geographic, historical, data and materials, web interface, Excel spreadsheets and R packages)</p></a></li>
+  <li data-topic="survy, fert, migr, geog, data" data-tech="web"><a STYLE="text-decoration:none" href="#CensusData">US Census Bureau's data.census.gov<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, web interface)</p></a></li>
   <li data-topic="mort, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#CauseOfDeathDatabase">The Human Cause-of-Death Database<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, web interface)</p></a></li>
   <li data-topic="mort, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#CanadianMortalityDatabase">The Canadian Human Mortality Database<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, web interface)</p></a></li>
   <li data-topic="mort, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#USMortalityDatabase">The United States Mortality Database<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, web interface)</p></a></li>
@@ -270,7 +272,6 @@ placeholder="Filter by title or attribute text">
   <li data-topic="survy, data" data-tech="web"><a STYLE="text-decoration:none" href="#MasterIndexFiles">Texas A&M Transportation Institute's Census SF1-ACS Master Index Files<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, data and materials, web interface)</p></a></li>
   <li data-topic="survy, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#AssocReligionDataArchives">The Association of Religion Data Archives<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, geographic, historical, data and materials, web interface)</p></a></li>
   <li data-topic="migr, data" data-tech="web,excel"><a STYLE="text-decoration:none" href="#IRSMigrationData">IRS Tax Statistics' Migration Data<p style="margin:0px;font-size:15px;font-weight:normal">(migration, data and materials, web interface and Excel spreadsheets)</p></a></li>
-  <li data-topic="survy, data" data-tech="web"><a STYLE="text-decoration:none" href="#DataFerrett">US Census Bureau's Data Ferrett<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, data and materials, web interface)</p></a></li>
   <li data-topic="survy, hist, data" data-tech="web, pdf"><a STYLE="text-decoration:none" href="#HistoricalCensus">US Census Bureau's Historical Census Data<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, historical, data and materials, web interface and PDF files)</p></a></li>
   <li data-topic="survy, hist, data" data-tech="web, pdf"><a STYLE="text-decoration:none" href="#CensusQuestions">US Census Bureau's Census Questionnaire Archive<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, historical, data and materials, web interface and PDF files)</p></a></li>
   <li data-topic="survy, fert, migr, hist, data" data-tech="web, pdf"><a STYLE="text-decoration:none" href="#ACSQuestions">US Census Bureau's American Community Survey Questionnaire Archive<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, fertility, migration, historical, data and materials, web interface and PDF files)</p></a></li>
@@ -414,7 +415,113 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 <br><br><br>
 <ul id="toolboxsearchUL">
 <hr>
-	
+
+<li data-topic="est, proj, fert, migr, mort, rev, geog, hist, data" data-tech="web, excel, r">
+<H2 id="UNWPP" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://population.un.org/wpp/" target="_blank">United Nations' World Population Prospects
+<p style="margin:0px;;font-size:15px;font-weight:normal">(population estimates, population projections, fertility, migration, mortality, review tools, geographic, historical, data and materials, web interface, Excel spreadsheets and R packages)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+From the main page: "The 
+<i><b>2019 Revision of World Population Prospects</b></i>  
+is the twenty-sixth round of official United Nations population estimates and 
+projections that have been prepared by the Population Division of the Department of Economic and Social Affairs of the United Nations Secretariat. 
+"The main results are presented in a 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://population.un.org/wpp/Download/Standard/Population/" target="_blank">series of Excel</a> 
+files displaying key demographic indicators for each UN development group, 
+<i>World Bank</i> income group, geographic region, <i>Sustainable Development Goals (SDGs)</i> region, subregion and country or area for selected 
+periods or dates within 1950-2100. For advanced users who need to use these data in a database form or statistical software, 
+we recommend to use the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://population.un.org/wpp/Download/Standard/CSV" target="_blank">CSV</a> 
+format for bulk download. 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://population.un.org/wpp/Download/SpecialAggregates" target="_blank">Special Aggregates</a> 
+also provide additional groupings of countries." 
+There are also related 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.r-project.org/" target="_blank">R</a> 
+packages (hosted by 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/" target="_blank">CRAN</a>) 
+that can be used to explore World Population Prospects data, including packages 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2019/index.html" target="_blank">wpp2019</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2019/index.html" target="_blank">wpp2017</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2019/index.html" target="_blank">wpp2015</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2019/index.html" target="_blank">wpp2012</a>, and
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2019/index.html" target="_blank">wpp2010</a>, 
+as well as the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wppExplorer/index.html" target="_blank">wppExplorer</a> 
+package (authored and maintained by 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://sites.stat.washington.edu/hana/" target="_blank">Hana Ševčíková</a>), 
+which provides a 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://shiny.rstudio.com/" target="_blank">Shiny</a> 
+interface to explore the data. 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://bayespop.shinyapps.io/wpp2019explorer/" target="_blank">Here</a> 
+is a version of the wppExplorer interface that's hosted online by the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://bayespop.csss.washington.edu/" target="_blank">BayesPop research group</a> 
+at the University of Washington. 
+&ndash;April 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-topic="mort" data-tech="r">
+<H2 id="MortCast" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://cran.r-project.org/web/packages/MortCast/" target="_blank">Ševčíková, Li, and Gerland's MortCast: Estimation and Projection of Age-Specific Mortality Rates 
+<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, R package)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+This 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/" target="_blank">R</a> 
+package by 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://sites.stat.washington.edu/hana/" target="_blank">Hana Ševčíková</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.researchgate.net/profile/Nan-Li-106" target="_blank">Nan Li</a>, and
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.researchgate.net/profile/Patrick-Gerland" target="_blank">Patrick Gerland</a> 
+applies age-specific mortality rate estimation and prediction models used with the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://link.springer.com/chapter/10.1007%2F978-3-319-26603-9_15" target="_blank">related book-chapter</a> 
+(<a STYLE="text-decoration:none;display:inline;padding:0" href="https://arxiv.org/pdf/1503.05215.pdf" target="_blank">pre-print</a>). 
+The package includes functions for application of the Kannisto (with Coherent Kannisto), Lee-Carter, pattern of mortality decline (PMD), Coale-Demeny, and Log-Quadratic models - 
+each useful and influential. 
+&ndash;April 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-topic="proj, fert, migr, mort" data-tech="r">
+<H2 id="bayesPop" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://bayespop.csss.washington.edu/software/" target="_blank">Raftery et al's BayesPop: Probabilistic Population Projection Software
+<p style="margin:0px;;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, R package)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+From the project's About page: "We are developing a statistical framework for probabilistic projection and estimation of population, 
+fertility, mortality and migration for all countries, in collaboration with the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.un.org/development/desa/pd/" target="_blank">United Nations Population Division</a>. 
+This extends the deterministic methods that have been standard since the 1940s, to account for uncertainty and measurement error in data." 
+From the Software page, the 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/" target="_blank">R</a> 
+packages include 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/bayesTFR/index.html" target="_blank">bayesTFR</a> 
+(for probabilistic projection of the total fertility rate), 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/bayesLife/index.html" target="_blank">bayesLife</a> 
+(for probabilistic projection of life expectancy), and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/bayesPop/index.html" target="_blank">bayesPop</a> 
+(for probabilistic projection of population, using bayesTFR and bayesLife). 
+Each package is also available on 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/" target="_blank">CRAN</a>, 
+and development versions (along with many related works) are available on the  
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/PPgp" target="_blank">associated GitHub page</a>. 
+The GitHub page also includes the  
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/PPgp/bayesLifeHIV" target="_blank">bayesLifeHIV</a> 
+package, for probabilistic projection of life expectancy for countries with generalized HIV/AIDS epidemics. 
+Coauthors of the suite of packages include 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://sites.stat.washington.edu/raftery/" target="_blank">Adrian Raftery</a>,   
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://sites.stat.washington.edu/hana/" target="_blank">Hana Ševčíková</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://leontinealkema.github.io/alkema_lab/" target="_blank">Leontine Alkema</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://stat.uw.edu/about-us/people/peiran-liu" target="_blank">Peiran Liu</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.baileyfosdick.com/" target="_blank">Bailey Fosdick</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.researchgate.net/profile/Patrick-Gerland" target="_blank">Patrick Gerland</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.seattleu.edu/business/faculty-and-staff/albers-faculty/jennifer-chunn-ms.html" target="_blank">Jennifer Chunn</a>, and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://iussp.org/en/directoryprofile/20172" target="_blank">Thomas Buettner</a>. 
+Top-notch applied demography resources to both learn about and apply Bayesian population projections. 
+&ndash;April 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
 <li data-topic="survy, fert, migr, geog, data" data-tech="r">
 <H2 id="tidycensus" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://walker-data.com/tidycensus/" target="_blank">Kyle Walker's tidycensus
@@ -1197,20 +1304,6 @@ From the <a STYLE="text-decoration:none;display:inline;padding:0" href="http://t
 "I develop and explain a new method for interpolating detailed fertility schedules from age-group data. The method allows estimation of fertility rates over any fine grid of ages, from either standard or non-standard age groups. The new method, called the calibrated spline (CS) estimator, expands an abridged fertility schedule by finding the smooth curve that minimizes a squared error penalty." This is a more nuanced version of the method and tool presented 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="http://demogr.mpg.de/en/projects_publications/publications_1904/mpidr_working_papers/calibrated_spline_estimation_of_detailed_fertility_schedules_from_abridged_data_4645.htm" target="_blank">here</a>.
 &ndash;March 2013 (updated May 2015)
-<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
-</p></H2>
-
-<li data-topic="survy, data" data-tech="web">
-<H2 id="DataFerrett" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="https://dataferrett.census.gov/" target="_blank">US Census Bureau's Data Ferrett
-<p style="margin:0px;;font-size:15px;font-weight:normal">(surveys, data and materials, web interface)</p></a>
-</font></strong></H2>
-<p style="margin:0px;font-size:15px">
-From the site: "DataFerrett is a unique data analysis and extraction tool-with recoding capabilities-to customize federal, state, and local data to 
-suit your requirements. (FERRETT stands for Federated Electronic Research, Review, Extraction, and Tabulation Tool.) Using DataFerrett, 
-you can develop an unlimited array of customized spreadsheets that are as versatile and complex as your usage demands." This extraction tool can be used 
-to make quick tabulations from PUMS microdata as well - terrific.
-&ndash;March 2013
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
