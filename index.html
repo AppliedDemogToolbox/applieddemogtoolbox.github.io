@@ -120,7 +120,7 @@ hr {
 
 <font FACE="HELVETICA"> 
 </center><p style="margin:0px;font-size:14px">
-This Applied Demography Toolbox is a list of applied demography computer code, calculators, data, materials, and texts. 
+This Applied Demography Toolbox is a list of applied demography computer programs, packages, scripts, spreadsheets, databases and references. 
 If you use, share, or reproduce information or ideas from the linked files, please cite the respective source. 
 If you have questions, recommendations, or <a STYLE="text-decoration:none" href="#Additions">additions</a> for the page, or any comments,
 please send a message to me 
@@ -182,8 +182,9 @@ placeholder="Filter by title or attribute text (asterisks identify items maintai
 <ul id="toolboxsearchUL">
 <br><br>
 <b>
-  <ul id="toolboxsearchUL"><u>Code and Calculators</u></br>
+  <ul id="toolboxsearchUL"><u>List of Tools</u></br>
   <li data-topic="mort" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDALCFIT">CEDA's LCFIT: The Lee-Carter Fitter<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, web interface)</p></a></li>
+  <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#rcbayes">Yeung, Alexander, and Riffe's rcbayes: Rogers-Castro Migration Age Schedules with Bayesian Models<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R package)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#MortCast">Ševčíková, Li, and Gerland's MortCast: Estimation and Projection of Age-Specific Mortality Rates<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R package)</p></a></li>
   <li data-topic="proj, fert, migr, mort" data-tech="r"><a STYLE="text-decoration:none" href="#BayesPop">Raftery et al's BayesPop: Probabilistic Population Projections Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, R packages)</p></a></li>
   <li data-topic="survy, fert, migr, geog, data" data-tech="r"><a STYLE="text-decoration:none" href="#tidycensus">Kyle Walker's tidycensus<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, fertility, migration, geographic, data and materials, R package)</p></a></li>
@@ -225,6 +226,9 @@ placeholder="Filter by title or attribute text (asterisks identify items maintai
   <li data-topic="fert" data-tech="web, excel"><a STYLE="text-decoration:none" href="#SplineFertility">Carl Schmertmann's Quadratic Spline Fertility Schedules<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, web interface and Excel spreadsheet)</p></a></li>
   <li data-topic="fert,geog" data-tech="winbugs, r"><a STYLE="text-decoration:none" href="#FertTransModelingAndMapping">Potter et al's Modeling and Mapping of Brazil's Fertility Transition<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, geographic, WinBUGS and R code)</p></a></li>
   <li data-topic="geog" data-tech="r"><a STYLE="text-decoration:none" href="#KnoxCox">Schmertmann et al's Knox Meets Cox<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, R code)</p></a></li>
+  <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#PDE">IIASA's PDE Population Projection Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li> 
+  <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#RUP">US Census Bureau's RUP: Rural and Urban Projection Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li>
+  <li data-topic="survy" data-tech="standalone"><a STYLE="text-decoration:none" href="#CSPRO">US Census Bureau's CSPro: Census and Survey Processing System<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, stand-alone software)</p></a></li>
   <li data-topic="est, survy" data-tech="r"><a STYLE="text-decoration:none" href="#MAPLES">Roberto Impicciatore's MAPLES: Smoothed Age Profile Estimation<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, R package)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#HMD2R">Carl Boe's HMD2R: Human Mortality Database Data Grabber*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
   <li data-topic="proj" data-tech="excel"><a STYLE="text-decoration:none" href="#CohortComponent">Tim Chapin's Cohort Component Model Spreadsheet*<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, Excel spreadsheet)</p></a></li>
@@ -234,10 +238,10 @@ placeholder="Filter by title or attribute text (asterisks identify items maintai
   <li data-topic="rev" data-tech="sas"><a STYLE="text-decoration:none" href="#MAPE-R">Adapted MAPE-R Calculation Code*<p style="margin:0px;font-size:15px;font-weight:normal">(review tools, SAS code)</p></a></li>
   <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#LIPRO">NIDI's LIPRO: Multistate Projection Model<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li>
   <li data-topic="age" data-tech="excel"><a STYLE="text-decoration:none" href="#MedianAgeSpreadsheet">Tom Wilson's Median Age Calculation Spreadsheet*<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, Excel spreadsheet)</p></a></li>
-  <li data-topic="proj, fert, migr, mort" data-tech="r"><a STYLE="text-decoration:none" href="#DemographyRPackage">Rob J Hyndman's Demography Package for R<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, R package)</p></a></li>
   <li data-topic="fert, migr, mort" data-tech="excel"><a STYLE="text-decoration:none" href="#XlXtrFun">XlXtrFun: Extra Functions for Microsoft Excel<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, migration, mortality, Excel add-on)</p></a></li>
   <li data-topic="age" data-tech="excel"><a STYLE="text-decoration:none" href="#PRBPopulationPyramidSpreadsheets">Eddie's PRB Population Pyramid Spreadsheets*<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, Excel spreadsheets)</p></a></li>
   <li data-topic="proj" data-tech="r"><a STYLE="text-decoration:none" href="#BasicProjection">Eddie's Basic Population Projection Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, R code)</p></a></li>
+  <li data-topic="proj, fert, migr, mort" data-tech="r"><a STYLE="text-decoration:none" href="#DemographyRPackage">Rob J Hyndman's Demography Package for R<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, R package)</p></a></li>
   <li data-topic="survy" data-tech="web"><a STYLE="text-decoration:none" href="#CornellPADACSCalculator">Cornell PAD's American Community Survey Calculator<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, web interface)</p></a></li>
   <li data-topic="geog, rev" data-tech="web"><a STYLE="text-decoration:none" href="#CornellPADMapper">Cornell PAD's Mapper<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, review tools, web interface)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#StanfordCourseLifeTable">Stanford Formal Demography Workshop's Period Life Table Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
@@ -248,9 +252,6 @@ placeholder="Filter by title or attribute text (asterisks identify items maintai
   <li data-topic="proj" data-tech="r"><a STYLE="text-decoration:none" href="#StochasticForecast">Eddie's Stochastic Population Forecast Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, R code)</p></a></li>
   <li data-topic="est" data-tech="r"><a STYLE="text-decoration:none" href="#RCEstimates">Eddie's Ratio-Correlation Population Estimates Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, R code)</p></a></li>
   <li data-topic="age" data-tech="r"><a STYLE="text-decoration:none" href="#MedianAge">Eddie's Median Age Calculation Code*<p style="margin:0px;font-size:15px;font-weight:normal">(age measures, R code)</p></a></li>
-  <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#RUP">US Census Bureau's RUP: Rural and Urban Projection Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li>
-  <li data-topic="survy" data-tech="standalone"><a STYLE="text-decoration:none" href="#CSPRO">US Census Bureau's CSPro: Census and Survey Processing System<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, stand-alone software)</p></a></li>
-  <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#PDE">IIASA's PDE Population Projection Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li> 
 </ul><br><br>
   <ul id="toolboxsearchUL"><u>Data and Materials</u></br>
   <li data-topic="est, proj, fert, migr, mort, rev, geog, hist, data" data-tech="web, excel, r" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#UNWPP">United Nations' World Population Prospects<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, population projections, fertility, migration, mortality, review tools, geographic, historical, data and materials, web interface, Excel spreadsheets and R packages)</p></a></li>
@@ -278,6 +279,7 @@ placeholder="Filter by title or attribute text (asterisks identify items maintai
   <li data-topic="fert, geog, hist, data" data-tech="web"><a STYLE="text-decoration:none" href="#HumanFertilityDatabase">The Human Fertility Database<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, geographic, historical, data and materials, web interface)</p></a></li>
 </ul><br><br>
   <ul id="toolboxsearchUL"><u>Texts and Instruction</u></br>
+  <li data-topic="geog, surveys, data, text" data-tech="web, r"><a STYLE="text-decoration:none" href="#AnalyzingUSCensus">Kyle Walker's Analyzing US Census Data: Methods, Maps, and Models in R<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, geographic, data and materials, texts and instruction, R code, web interface)</p></a></li>
   <li data-topic="proj, rev, text" data-tech="pdf" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#DraftProjChecklist">Tom Wilson's Checklist for Reviewing Draft Population Projections<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, review tools, texts and instruction, PDF file)</p></a></li>
   <li data-topic="est, proj, fert, migr, mort, text" data-tech="web, pdf"><a STYLE="text-decoration:none" href="#UNManuals">United Nations' Demographic Manuals<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, population projections, fertility, migration, mortality, texts and instruction, web interface and PDF files)</p></a></li>
   <li data-topic="fert, migr, mort, text" data-tech="web, pdf"><a STYLE="text-decoration:none" href="#IUSSPTools">IUSSP's Tools for Demographic Estimation<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, migration, mortality, texts and instruction, web interface and PDF file)</p></a></li>
@@ -405,6 +407,42 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 <br><br><br>
 <ul id="toolboxsearchUL">
 <hr>
+
+<li data-topic="migr" data-tech="r">
+<H2 id="rcbayes" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://cran.r-project.org/web/packages/rcbayes/index.html" target="_blank">Yeung, Alexander, and Riffe's rcbayes: Rogers-Castro Migration Age Schedules with Bayesian Models
+<p style="margin:0px;;font-size:15px;font-weight:normal">(migration, R package)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+From the reference manual for the above-linked package by 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://orcid.org/0000-0002-0319-6892" target="_blank">Jessie Yeung</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://orcid.org/0000-0002-8135-3435" target="_blank">Monica Alexander</a>, and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://orcid.org/0000-0002-2673-4622" target="_blank">Tim Riffe</a>: 
+"A collection of functions to estimate Rogers-Castro migration age schedules using 'Stan'. This model which describes the fundamental 
+relationship between migration and age in the form of a flexible multi-exponential migration model was most notably proposed in Rogers and Castro (1978) 
+<<a STYLE="text-decoration:none;display:inline;padding:0" href="https://doi.org/10.1068/a100475" target="_blank">doi:10.1068/a100475</a>>". 
+The rcbayes package is a helpful and important resource to work with the highly non-linear Rogers-Castro model, and was a 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://rviews.rstudio.com/2021/11/29/october-2021-top-40-new-cran-packages/" target="_blank">top 40 new CRAN package for October 2021</a>. 
+&ndash;February 2022
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-topic="geog, surveys, data, text" data-tech="web, r">
+<H2 id="AnalyzingUSCensus" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://walker-data.com/census-r/index.html" target="_blank">Kyle Walker's Analyzing US Census Data: Methods, Maps, and Models in R
+<p style="margin:0px;;font-size:15px;font-weight:normal">(surveys, geographic, data and materials, texts and instruction, R code, web interface)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+From the preface for the above-linked online version of 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://walker-data.com/" target="_blank">Prof. Walker's</a> 
+book: "Census data are widely used in the United States across numerous research and applied fields, 
+including education, business, journalism, and many others. Until recently, the process of working with US Census data has required 
+the use of a wide array of web interfaces and software platforms to prepare, map, and present data products. The goal of this book 
+is to illustrate the utility of the R programming language for handling these tasks, allowing Census data users to manage their 
+projects in a single computing environment."
+&ndash;February 2022
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
 
 <li data-topic="est, proj, fert, migr, mort, rev, geog, hist, data" data-tech="web, excel, r">
 <H2 id="UNWPP" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
