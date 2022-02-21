@@ -83,7 +83,7 @@
 }
 
 #toolboxsearchUL li a:hover:not(.header) {
-  background-color: #ffffff;
+  background-color: #dddddd;
 }
 
 hr {
@@ -184,6 +184,7 @@ placeholder="Filter by title or attribute text (asterisks identify items maintai
 <b>
   <ul id="toolboxsearchUL"><u>Index of Tools</u></br>
   <li data-topic="mort" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDALCFIT">CEDA's LCFIT: The Lee-Carter Fitter<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, web interface)</p></a></li>
+  <li data-topic="mort" data-tech="r" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#KannistoOldestAges">Carl Schmertmann's R Code for Kannisto Extrapolation of Mortality Rates to Oldest Ages<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
   <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#rcbayes">Yeung, Alexander, and Riffe's rcbayes: Rogers-Castro Migration Age Schedules with Bayesian Models<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R package)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#MortCast">Ševčíková, Li, and Gerland's MortCast: Estimation and Projection of Age-Specific Mortality Rates<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R package)</p></a></li>
   <li data-topic="proj, fert, migr, mort" data-tech="r"><a STYLE="text-decoration:none" href="#BayesPop">Raftery et al's BayesPop: Probabilistic Population Projections Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, R packages)</p></a></li>
@@ -223,7 +224,7 @@ placeholder="Filter by title or attribute text (asterisks identify items maintai
   <li data-topic="rev" data-tech="excel"><a STYLE="text-decoration:none" href="#MAPE-R_Excel">Tom Bryan's MAPE-R Spreadsheet*<p style="margin:0px;font-size:15px;font-weight:normal">(review tools, Excel spreadsheet)</p></a></li>
   <li data-topic="est, survy, migr" data-tech="sas"><a STYLE="text-decoration:none" href="#IPFSAS">Webb Sprague's Iterative Proportional Fitting Macro*<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, migration, SAS code)</p></a></li>
   <li data-topic="migr" data-tech="excel"><a STYLE="text-decoration:none" href="#USCBMigCalc">US Census Bureau's Calculating Migration Expectancy Using ACS Data<p style="margin:0px;font-size:15px;font-weight:normal">(migration, Excel spreadsheet)</p></a></li>
-  <li data-topic="fert" data-tech="web, excel"><a STYLE="text-decoration:none" href="#SplineFertility">Carl Schmertmann's Quadratic Spline Fertility Schedules<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, web interface and Excel spreadsheet)</p></a></li>
+  <li data-topic="fert" data-tech="r, excel"><a STYLE="text-decoration:none" href="#SplineFertility">Carl Schmertmann's Quadratic Spline Fertility Schedules<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, R code and Excel spreadsheet)</p></a></li>
   <li data-topic="fert,geog" data-tech="winbugs, r"><a STYLE="text-decoration:none" href="#FertTransModelingAndMapping">Potter et al's Modeling and Mapping of Brazil's Fertility Transition<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, geographic, WinBUGS and R code)</p></a></li>
   <li data-topic="geog" data-tech="r"><a STYLE="text-decoration:none" href="#KnoxCox">Schmertmann et al's Knox Meets Cox<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, R code)</p></a></li>
   <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#PDE">IIASA's PDE Population Projection Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li> 
@@ -407,6 +408,22 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 <br><br><br>
 <ul id="toolboxsearchUL">
 <hr>
+
+<li data-topic="mort" data-tech="r">
+<H2 id="KannistoOldestAges" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://bonecave.schmert.net/Kannisto.html" target="_blank">Carl Schmertmann's R Code for Kannisto Extrapolation of Mortality Rates to Oldest Ages
+<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, R code)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+Described in 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://bonecave.schmert.net/Kannisto_extrapolation_of_mortality_rates_to_oldest_ages.pdf" target="_blank">the explanatory notes (2019)</a> by 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://popcenter.fsu.edu/faculty30a0.html?id=cschmertmann" target="_blank">Prof. Schmertmann</a>, and in 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.demogr.mpg.de/papers/books/monograph5/start.htm" target="_blank">Thatcher, Kannisto, and Vaupel (1998)</a>, 
+the Kannisto model of oldest-age mortality makes use of Kannisto's observation that a logit function can provide a good fit for oldest-age mortality rates in modern populations. 
+This can be useful for extrapolating mortality to oldest ages. 
+&ndash;February 2022
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
 
 <li data-topic="migr" data-tech="r">
 <H2 id="rcbayes" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
@@ -821,16 +838,16 @@ Information from the front page of the site:
 students, journalists, policy analysts, and others interested in the history of human longevity." 
 "The CHMD is a 'satellite' of the 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.mortality.org/" target="_blank">Human Mortality Database (HMD)</a>, 
-an international database which currently holds detailed data for 37 
+an international database which currently holds detailed data for 41 
 countries or regions. Consequently, the CHMD’s underlying methodology corresponds to the one used for the HMD."
 "The CHMD gathers all required data (deaths counts, births counts, population size, exposure-to-risk, death rates) to 
 compute life tables for Canada, its provinces and its territories. One of the great advantages of the database is to include 
 data that is validated and corrected, when required, and rendered comparable, if possible, for the period ranging from 
-1921 thru 2011." Like the below-linked 
+1921 thru 2019." Like the below-linked 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://usa.mortality.org/" target="_blank">United States Mortality Database</a>, 
 an amazing and immensely useful and important compilation 
 of data - am so grateful for these projects. 
-&ndash;September 2019
+&ndash;September 2019 (updated February 2022)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
@@ -1619,14 +1636,15 @@ is available
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
-<li data-topic="fert" data-tech="web, excel">
+<li data-topic="fert" data-tech="r, excel">
 <H2 id="SplineFertility" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="http://demographic-research.org/Volumes/Vol12/5/qsfit/qsfit.html" target="_blank">Carl Schmertmann's Quadratic Spline Fertility Schedules
-<p style="margin:0px;;font-size:15px;font-weight:normal">(fertility, web interface and Excel spreadsheet)</p></a>
+href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/schmert/Quadratic-splines/master/docs/QS_examples.html" target="_blank">Carl Schmertmann's Quadratic Spline Fertility Schedules
+<p style="margin:0px;;font-size:15px;font-weight:normal">(fertility, R code and Excel spreadsheet)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
-<a STYLE="text-decoration:none;display:inline;padding:0" href="http://popcenter.fsu.edu/people/carl.html" target="_blank">Carl Schmertmann</a> is a demographer who (among other things) is leading work in the development and application of new methods. 
-The abstract from Schmertmann's (2003) 
+The abstract for 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://popcenter.fsu.edu/faculty30a0.html?id=cschmertmann" target="_blank">Prof. Schmertmann</a>'s 
+(2003) 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="http://demographic-research.org/" target="_blank"><i>Demographic Research</i></a> 
 paper describing this neat work: "I propose and examine a new family of models for age-specific fertility schedules, 
 in which three index ages determine the schedule's shape. The new system is based on constrained quadratic splines. It has easily interpretable parameters, 
@@ -1634,10 +1652,21 @@ is flexible enough to fit a variety of "noiseless" schedules well, and is inflex
 two hundred contemporary ASFR schedules, the new model fits a majority better, and in some cases much better, than the Coale-Trussell model. When fit to a recent 
 Swedish time series, model parameters exhibit simple, regular changes over time, suggesting utility in forecasting applications. In simulated small-sample data the 
 new model produces plausible ASFR estimates, with errors similar to Coale-Trussell." 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="http://demographic-research.org/volumes/vol9/5/" target="_blank">Here</a> 
-is a link to <i>Demographic Research</i>'s home for the paper, which also hosts a great 
-Microsoft Excel version of Carl's model.
-&ndash;August 2011 (updated June 2021)
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/schmert/Quadratic-splines/master/docs/nls_QS_examples.html" target="_blank">Here</a> 
+is a link to a version that uses 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/" target="_blank">R</a>'s 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/nls.html" target="_blank">nls()</a>  
+function, and to 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/schmert/Quadratic-splines" target="_blank">the code's GitHub repository</a>. 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://schmertmann.shinyapps.io/QS-interactive/" target="_blank">This</a> 
+neat 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://shiny.rstudio.com/" target="_blank">Shiny</a> 
+application by Prof. Schmertmann provides an informative demonstration if the model. 
+And 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="http://demographic-research.org/volumes/vol9/5/" target="_blank">here</a> 
+is a link to <i>Demographic Research</i>'s home for the paper, which also hosts a helpful 
+Microsoft Excel implementation of the model.
+&ndash;August 2011 (updated February 2022)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
