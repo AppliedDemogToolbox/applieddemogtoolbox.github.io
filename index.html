@@ -183,6 +183,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
 <b>
   <ul id="toolboxsearchUL"><u>Index of Tools</u></br>
   <li data-topic="mort" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDALCFIT">CEDA's LCFIT: The Lee-Carter Fitter<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, web interface)</p></a></li>
+  <li data-topic="mort, fert, geog, hist, data" data-tech="r"><a STYLE="text-decoration:none" href="#HMDHFDplus">Riffe, Boe, and Hilton's HMDHFDplus: Read HMD and HFD Data from the Web<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, fertility, geographic, historical, data and materials, R package)</p></a></li>
   <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#migest">Guy Abel's migest: Tools for Estimating, Measuring and Working with Migration Data<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R package)</p></a></li>
   <li data-topic="mort, survy" data-tech="stata, r"><a STYLE="text-decoration:none" href="#e0SocDisp">Gupta and Sudharsanan's Replication Code for Life Expectancy Disparity Analysis with the Indian NFHS<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, surveys, Stata and R code)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#KannistoOldestAges">Carl Schmertmann's R Code for Kannisto Extrapolation of Mortality Rates to Oldest Ages<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
@@ -230,7 +231,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
   <li data-topic="geog" data-tech="r"><a STYLE="text-decoration:none" href="#KnoxCox">Schmertmann et al's Knox Meets Cox<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, R code)</p></a></li>
   <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#RUP">US Census Bureau's RUP: Rural and Urban Projection Software<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li>
   <li data-topic="survy" data-tech="standalone"><a STYLE="text-decoration:none" href="#CSPRO">US Census Bureau's CSPro: Census and Survey Processing System<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, stand-alone software)</p></a></li>
-  <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#HMD2R">Carl Boe's HMD2R: Human Mortality Database Data Grabber*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
+  <li data-topic="mort, geog, hist, data" data-tech="r"><a STYLE="text-decoration:none" href="#HMD2R">Carl Boe's HMD2R: Human Mortality Database Data Grabber*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, R code)</p></a></li>
   <li data-topic="proj" data-tech="excel"><a STYLE="text-decoration:none" href="#CohortComponent">Tim Chapin's Cohort Component Model Spreadsheet*<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, Excel spreadsheet)</p></a></li>
   <li data-topic="proj" data-tech="standalone"><a STYLE="text-decoration:none" href="#Spectrum">Avenir Health's Spectrum: Policy Models (including "DemProj")<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, stand-alone software)</p></a></li>
   <li data-topic="proj, fert, mort, age, text" data-tech="stata, r"><a STYLE="text-decoration:none" href="#ECO572">Germ&aacute;n Rodr&iacute;guez' Research Methods in Demography<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, mortality, age measures, texts and instruction, Stata and R code)</p></a></li>
@@ -410,6 +411,36 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 <br><br><br>
 <ul id="toolboxsearchUL">
 <hr>
+	
+<li data-topic="fertility, mortality, geographic, data" data-tech="r">
+<H2 id="HMDHFDplus" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://cran.r-project.org/web/packages/HMDHFDplus/" target="_blank">Riffe, Boe, and Hilton's HMDHFDplus: Read HMD and HFD Data from the Web
+<p style="margin:0px;;font-size:15px;font-weight:normal">(fertility, mortality, geographic, historical, data and materials, R package)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+From the package description, HMDHFDplus offers 
+"Utilities for reading data from the Human Mortality Database 
+(<<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.mortality.org" target="_blank">https://www.mortality.org</a>>), 
+Human Fertility Database 
+(<<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.humanfertility.org" target="_blank">https://www.humanfertility.org</a>>), 
+and similar databases from the web or locally into an R session as data.frame objects. These are the two most widely used sources of demographic data to study basic demographic change, trends, and develop new demographic methods. Other supported databases at this time include the Human Fertility Collection 
+(<<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.fertilitydata.org" target="_blank">https://www.fertilitydata.org</a>>), 
+The Japanese Mortality Database 
+(<<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.ipss.go.jp/p-toukei/JMD/index-en.html" target="_blank">https://www.ipss.go.jp/p-toukei/JMD/index-en.html</a>>), 
+and the Canadian Human Mortality Database 
+(<<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.bdlc.umontreal.ca/chmd/" target="_blank">http://www.bdlc.umontreal.ca/chmd/</a>>). 
+Arguments and data are standardized."
+This package by 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/timriffe" target="_blank">Tim Riffe</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.linkedin.com/in/carl-boe-3046502a/" target="_blank">Carl Boe</a>, and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.southampton.ac.uk/people/5xgnrc/doctor-jason-hilton" target="_blank">Jason Hilton</a>, 
+with contributions from 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://jrgoldstein.com/" target="_blank">Joshua Goldstein</a> and 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/stephenholzman" target="_blank">Stephen Holzman</a>, 
+provides tools to readily access and manage data from some premier demographic research databases. 
+&ndash;August 2022
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
 	
 <li data-topic="mort, geog, hist, data" data-tech="web">
 <H2 id="HLD" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
@@ -593,11 +624,11 @@ href="https://population.un.org/wpp/" target="_blank">United Nations' World Popu
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
 From the main page: "The 
-<i><b>2019 Revision of World Population Prospects</b></i>  
-is the twenty-sixth round of official United Nations population estimates and 
-projections that have been prepared by the Population Division of the Department of Economic and Social Affairs of the United Nations Secretariat. 
+<i><b>2022 Revision of World Population Prospects</b></i>  
+is the twenty-seventh edition of official United Nations population estimates and projections that have been prepared by the Population Division 
+of the Department of Economic and Social Affairs of the United Nations Secretariat. 
 "The main results are presented in a 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="https://population.un.org/wpp/Download/Standard/Population/" target="_blank">series of Excel</a> 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://population.un.org/wpp/Download" target="_blank">series of Excel</a> 
 files displaying key demographic indicators for each UN development group, 
 <i>World Bank</i> income group, geographic region, <i>Sustainable Development Goals (SDGs)</i> region, subregion and country or area for selected 
 periods or dates within [1950 to 2100]. 
@@ -612,6 +643,7 @@ There are also related
 packages (hosted by 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/" target="_blank">CRAN</a>) 
 that can be used to explore World Population Prospects data, including packages 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/PPgp/wpp2022" target="_blank">wpp2022</a>, 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2019/index.html" target="_blank">wpp2019</a>, 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2017/index.html" target="_blank">wpp2017</a>, 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://cran.r-project.org/web/packages/wpp2015/index.html" target="_blank">wpp2015</a>, 
@@ -624,11 +656,11 @@ package (authored and maintained by
 which provides a 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://shiny.rstudio.com/" target="_blank">Shiny</a> 
 interface to explore the data. 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="https://bayespop.shinyapps.io/wpp2019explorer/" target="_blank">Here</a> 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://bayespop.shinyapps.io/wpp2022explorer/" target="_blank">Here</a> 
 is a version of the wppExplorer interface that's hosted online by the 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="https://bayespop.csss.washington.edu/" target="_blank">BayesPop research group</a> 
 at the University of Washington. 
-&ndash;April 2021
+&ndash;April 2021 (updated August 2022)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
@@ -1919,10 +1951,10 @@ mortality, morbidity and fertility data. CDC vital statistics data are also avai
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
-<li data-topic="mort" data-tech="r">
+<li data-topic="mort, geographic, historical, data and materials" data-tech="r">
 <H2 id="HMD2R" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://github.com/AppliedDemogToolbox/Boe_HMD2R/raw/master/HMD2R.R" target="_blank">Carl Boe's HMD2R: Human Mortality Database Data Grabber*
-<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, R code)</p></a>
+<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, geographic, data and materials, R code)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
 The <a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.mortality.org/" target="_blank">Human Mortality Database</a> 
@@ -1933,8 +1965,8 @@ the HMD and
 <a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.ceda.berkeley.edu/" target="_blank">CEDA</a> at the 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.demog.berkeley.edu/" target="_blank">UC Berkeley Department of Demography</a>) 
 that allows users to easily pull its data directly from the Web into R. 
-This function was updated in June 2022 for changes to the HMD website and access.
-&ndash;June 2011 (updated July 2022)
+This function was updated in June 2022 to manage changes to the HMD website and access.
+&ndash;June 2011 (updated August 2022)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
