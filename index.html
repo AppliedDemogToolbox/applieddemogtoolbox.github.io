@@ -168,6 +168,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
 	<option value="all">Technology attributes (all)</option>
 	<option value="excel">Excel spreadsheets or add-ons</option>
 	<option value="pdf">PDF files</option>
+	<option value="py">Python code</option>
 	<option value="r">R code or packages</option>
 	<option value="sas">SAS code</option>
 	<option value="standalone">Stand-alone software</option>
@@ -248,7 +249,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#StanfordCourseLifeTable">Stanford Formal Demography Workshop's Period Life Table Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
   <li data-topic="est, survy, migr" data-tech="r"><a STYLE="text-decoration:none" href="#IPF_R">Iterative Proportional Fitting R Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, migration, R code)</p></a></li>
   <li data-topic="fert" data-tech="r"><a STYLE="text-decoration:none" href="#BrassFertility">Eddie's Brass Relational Gompertz Fertility Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, R code)</p></a></li>
-  <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#BrassMortality">Eddie's Brass Relational Logit Mortality Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
+  <li data-topic="mort" data-tech="r, py"><a STYLE="text-decoration:none" href="#BrassMortality">Eddie's Brass Relational Logit Mortality Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code, Python code)</p></a></li>
   <li data-topic="proj, fert, migr, mort, age, geog" data-tech="excel"><a STYLE="text-decoration:none" href="#PAS">US Census Bureau's PAS: Population Analysis System<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, age measures, geographic, Excel spreadsheets)</p></a></li>
   <li data-topic="proj" data-tech="r"><a STYLE="text-decoration:none" href="#StochasticForecast">Eddie's Stochastic Population Forecast Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, R code)</p></a></li>
   <li data-topic="est" data-tech="r"><a STYLE="text-decoration:none" href="#RCEstimates">Eddie's Ratio-Correlation Population Estimates Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, R code)</p></a></li>
@@ -2409,10 +2410,10 @@ questions, you can send an email to me at
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
-<li data-topic="mort" data-tech="r">
+<li data-topic="mort" data-tech="r, py">
 <H2 id="BrassMortality" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://github.com/AppliedDemogToolbox/Hunsinger_BrassRelationalLogit/raw/master/BrassRelationalLogitCode.R" target="_blank">Eddie's Brass Relational Logit Mortality Model Code*
-<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, R code)</p></a>
+<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, R code, Python code)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
 I think <a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.worldcat.org/title/brass-tacks-essays-in-medical-demography-a-tribute-to-the-memory-of-professor-william-brass/oclc/488904701?referer=di&ht=edition" 
@@ -2431,10 +2432,15 @@ Linked above is an
 <a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.r-project.org/" target="_blank">R</a> 
 function/script to apply the Brass Relational Logit model, and make selected output graphics. To make it work, you should be able to simply select-all 
 of the code, copy, and paste into an R command line (example input data (csv format) is linked through the Internet, and can be simply downloaded for review). 
+And here  
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/AppliedDemogToolbox/Hunsinger_BrassRelationalLogit/blob/master/BrassRelationalLogitCode.ipynb" target="_blank">here</a> 
+is a Python notebook 
+(<a STYLE="text-decoration:none;display:inline;padding:0" href="https://jupyter.org/" target="_blank">Jupyter Notebook</a>) 
+version of the same process. 
 If you would like to plug in data for another life table (simple), or to consider Brass' mortality model for a particular project, and have any questions, don't 
 hesitate to send me an email at
 <a STYLE="text-decoration:none;display:inline;padding:0" href="mailto:edyhsgr@gmail.com">edyhsgr@gmail.com</a>.
-&ndash;February 2011 (updated March 2022)
+&ndash;February 2011 (updated August 2022)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
