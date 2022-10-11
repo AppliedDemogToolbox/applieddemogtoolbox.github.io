@@ -248,7 +248,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
   <li data-topic="geog, rev" data-tech="web"><a STYLE="text-decoration:none" href="#CornellPADMapper">Cornell PAD's Mapper<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, review tools, web interface)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#StanfordCourseLifeTable">Stanford Formal Demography Workshop's Period Life Table Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
   <li data-topic="est, survy, migr" data-tech="r"><a STYLE="text-decoration:none" href="#IPF_R">Iterative Proportional Fitting R Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, migration, R code)</p></a></li>
-  <li data-topic="fert" data-tech="r"><a STYLE="text-decoration:none" href="#BrassFertility">Eddie's Brass Relational Gompertz Fertility Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, R code)</p></a></li>
+  <li data-topic="fert" data-tech="r, py"><a STYLE="text-decoration:none" href="#BrassFertility">Eddie's Brass Relational Gompertz Fertility Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, R and Python code)</p></a></li>
   <li data-topic="mort" data-tech="r, py"><a STYLE="text-decoration:none" href="#BrassMortality">Eddie's Brass Relational Logit Mortality Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R and Python code)</p></a></li>
   <li data-topic="proj, fert, migr, mort, age, geog" data-tech="excel"><a STYLE="text-decoration:none" href="#PAS">US Census Bureau's PAS: Population Analysis System<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, age measures, geographic, Excel spreadsheets)</p></a></li>
   <li data-topic="proj" data-tech="r"><a STYLE="text-decoration:none" href="#StochasticForecast">Eddie's Stochastic Population Forecast Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, R code)</p></a></li>
@@ -2377,10 +2377,10 @@ perspective for the field, which I think are essential for users of demographic 
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
-<li data-topic="fert" data-tech="r">
+<li data-topic="fert" data-tech="r, py">
 <H2 id="BrassFertility" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://github.com/AppliedDemogToolbox/Hunsinger_BrassRelationalGompertz/raw/master/BrassRelationalGompertzCode.R" target="_blank">Eddie's Brass Relational Gompertz Fertility Model Code*
-<p style="margin:0px;;font-size:15px;font-weight:normal">(fertility, R code)</p></a>
+<p style="margin:0px;;font-size:15px;font-weight:normal">(fertility, R and Python code)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
 In addition to the Brass Relational Logit Model for mortality (which has some description 
@@ -2403,6 +2403,13 @@ a professor at the the Australian National University. Linked above is an
 function/script to apply the Brass Relational Gompertz model, and make selected output graphics. No care was taken in the selection of the standard profile, and 
 the code has not been tested (please let me know any problems you find, of course). To make it work, you should be able to simply select-all 
 of the code, copy, and paste into an R command line (example input data (csv format) is linked through the Internet, and can be simply downloaded for review). 
+And   
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/AppliedDemogToolbox/Hunsinger_BrassRelationalGompertz/blob/master/BrassRelationalGompertzCode.ipynb" target="_blank">here</a> 
+is a 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.python.org/" target="_blank">Python</a> 
+notebook 
+(using <a STYLE="text-decoration:none;display:inline;padding:0" href="https://jupyter.org/" target="_blank">Jupyter</a>) 
+version of the same process. 
 If you would like to plug in data for another proportional fertility profile (simple), and have any 
 questions, you can send an email to me at
 <a STYLE="text-decoration:none;display:inline;padding:0" href="mailto:edyhsgr@gmail.com">edyhsgr@gmail.com</a>.
