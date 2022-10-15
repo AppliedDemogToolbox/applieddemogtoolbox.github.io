@@ -246,7 +246,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
   <li data-topic="proj, fert, migr, mort" data-tech="r"><a STYLE="text-decoration:none" href="#DemographyRPackage">Rob J Hyndman's Demography Package for R<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, fertility, migration, mortality, R package)</p></a></li>
   <li data-topic="survy" data-tech="web"><a STYLE="text-decoration:none" href="#CornellPADACSCalculator">Cornell PAD's American Community Survey Calculator<p style="margin:0px;font-size:15px;font-weight:normal">(surveys, web interface)</p></a></li>
   <li data-topic="geog, rev" data-tech="web"><a STYLE="text-decoration:none" href="#CornellPADMapper">Cornell PAD's Mapper<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, review tools, web interface)</p></a></li>
-  <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#StanfordCourseLifeTable">Stanford Formal Demography Workshop's Period Life Table Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
+  <li data-topic="mort" data-tech="r, python"><a STYLE="text-decoration:none" href="#StanfordCourseLifeTable">Stanford Formal Demography Workshop's Period Life Table Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R and Python code)</p></a></li>
   <li data-topic="est, survy, migr" data-tech="r"><a STYLE="text-decoration:none" href="#IPF_R">Iterative Proportional Fitting R Code*<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, migration, R code)</p></a></li>
   <li data-topic="fert" data-tech="r, py"><a STYLE="text-decoration:none" href="#BrassFertility">Eddie's Brass Relational Gompertz Fertility Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(fertility, R and Python code)</p></a></li>
   <li data-topic="mort" data-tech="r, py"><a STYLE="text-decoration:none" href="#BrassMortality">Eddie's Brass Relational Logit Mortality Model Code*<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R and Python code)</p></a></li>
@@ -2294,26 +2294,32 @@ which is also listed on this page.
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
-<li data-topic="mort" data-tech="r">
+<li data-topic="mort" data-tech="r, python">
 <H2 id="StanfordCourseLifeTable" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://github.com/AppliedDemogToolbox/StanfordCourseLifeTable/raw/master/StanfordCourseLifeTableCode.R" target="_blank">Stanford Formal Demography Workshop's Period Life Table Code*
-<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, R code)</p></a>
+<p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, R and Python code)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
 Life tables are the foundation of demography, and above is a link to a reproduced period life table function/script (not my own) 
 (<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.r-project.org/" target="_blank">R</a>) that was used at the 2006 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.stanford.edu/group/heeh/cgi-bin/web/node/49" target="_blank">Stanford Formal Demography Workshop</a>, 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://web.archive.org/web/20170210132923/http://web.stanford.edu/group/heeh/cgi-bin/web/node/73" target="_blank">Stanford Formal Demography Workshop</a> 
+(on 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://archive.org/" target="_blank">Internet Archive</a>), 
 and that I've used as a template for constructing my own life tables in R. 
 To make it work, you should be able to simply select-all of the code, copy, and paste into an R command line (example input data (csv format) is linked 
-through the Internet, and can be simply downloaded for review). If you would like to plug in data for another life table (simple), and have any questions, feel 
+through the Internet, and can be simply downloaded for review). If you have any questions, feel 
 free to send me an email at
 <a STYLE="text-decoration:none;display:inline;padding:0" href="mailto:edyhsgr@gmail.com">edyhsgr@gmail.com</a>.
-<a STYLE="text-decoration:none;display:inline;padding:0" href="http://www.stanford.edu/group/heeh/cgi-bin/web/node/75" target="_blank">Here</a> 
-is a link to the original posting of the function (I reproduced it to allow an immediate link to input data, so that potential users can quickly review it). 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://web.archive.org/web/20170209225451/http://web.stanford.edu/group/heeh/cgi-bin/web/node/75" target="_blank">Here</a> 
+is a link to an archived original posting of the function (I reproduced it to allow an immediate link to input data, so that potential users can quickly review results). 
 And 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="https://raw.githubusercontent.com/edyhsgr/AKLifeTables_2014to2016/master/StanfordCourseLifeTableCode_ModifiedForSingleYear_02212018.R" target="_blank">here is a single year of age version</a>, 
-applied to Alaska data for years 2014 to 2016. 
-&ndash;February 2011 (updated January 2022)
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://github.com/AppliedDemogToolbox/StanfordCourseLifeTable/blob/master/StanfordCourseLifeTableCode.ipynb" target="_blank">here</a> 
+is a 
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.python.org/" target="_blank">Python</a> 
+notebook 
+(using <a STYLE="text-decoration:none;display:inline;padding:0" href="https://jupyter.org/" target="_blank">Jupyter</a>) 
+version of the same process.
+&ndash;February 2011 (updated October 2022)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
