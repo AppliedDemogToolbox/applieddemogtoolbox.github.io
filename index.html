@@ -185,7 +185,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
 <b>
   <ul id="toolboxsearchUL"><u>Index of Tools</u></br>
   <li data-topic="mort" data-tech="web" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDALCFIT">CEDA's LCFIT: The Lee-Carter Fitter<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, web interface)</p></a></li>
-  <li data-topic="mort, fert, migr" data-tech="r"><a STYLE="text-decoration:none" href="#vital">Hyndman and O'Hara-Wild's vital: Tidy Analysis Tools for Mortality, Fertility, Migration and Population Data<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, fertility, migration, R package)</p></a></li>
+  <li data-topic="mort, fert, migr" data-tech="r"><a STYLE="text-decoration:none" href="#vital">Hyndman and O'Hara-Wild's vital Package for R<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, fertility, migration, R package)</p></a></li>
   <li data-topic="mort, geog, hist, data" data-tech="jl"><a STYLE="text-decoration:none" href="#HMDjl">Patrick Moehrke's HMD.jl<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, geographic, historical, data and materials, Julia package)</p></a></li>
   <li data-topic="mort, text" data-tech="stata"><a STYLE="text-decoration:none" href="#mslt">Jer&ocirc;nimo O. Muniz' mslt: Multistate Life Tables Using Stata<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, texts and instruction, Stata package)</p></a></li>
   <li data-topic="est, survy, migr" data-tech="py"><a STYLE="text-decoration:none" href="#ipfn">Damien Forthomme's ipfn: Iterative Proportional Fitting with N Dimensions<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, migration, Python package)</p></a></li>
@@ -204,7 +204,7 @@ placeholder="Filter by title or attribute text. Asterisks identify items maintai
   <li data-topic="migr, data" data-tech="r"><a STYLE="text-decoration:none" href="#IRSformat">Hauer and Byar's IRS County-to-County Migration Data, 1990 to 2010, Replication Code<p style="margin:0px;font-size:15px;font-weight:normal">(migration, data and materials, R code)</p></a></li>
   <li data-topic="est, survy, fert, migr, mort, age" data-tech="r"><a STYLE="text-decoration:none" href="#DemoTools">Riffe et al's DemoTools: Tools for the Evaluation, Adjustment, and Standardization of Demographic Data<p style="margin:0px;font-size:15px;font-weight:normal">(population estimates, surveys, fertility, migration, mortality, age measures, R package)</p></a></li>
   <li data-topic="mort" data-tech="r"><a STYLE="text-decoration:none" href="#GetUSAMortData">Sam Clark's Get USA Mortality Data<p style="margin:0px;font-size:15px;font-weight:normal">(mortality, R code)</p></a></li>
-  <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#MMSRCode">R Code for Fitting the Multi-Exponential Model Migration Schedule*<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
+  <li data-topic="migr" data-tech="r"><a STYLE="text-decoration:none" href="#MMSRCode">R Code for Fitting the Rogers-Castro Multi-Exponential Model Migration Schedule*<p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a></li>
   <li data-topic="geog" data-tech="standalone"><a STYLE="text-decoration:none" href="#GoogleEarthPro">Google Earth Pro<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, stand-alone software)</p></a></li>
   <li data-topic="geog, rev" data-tech="web"><a STYLE="text-decoration:none" href="#CensusGeocoder">US Census Bureau's Geocoder<p style="margin:0px;font-size:15px;font-weight:normal">(geographic, review tools, web interface)</p></a></li>
   <li data-topic="proj" data-tech="web, r"><a STYLE="text-decoration:none" href="#NextYearPop">Next Year Population Possibilities Reviewer*<p style="margin:0px;font-size:15px;font-weight:normal">(population projections, web interface, R code)</p></a></li>
@@ -419,7 +419,7 @@ is a neat article by <b>Nick Barnes</b> that gives this site some inspiration.
 
 <li data-topic="mort, fert, migr" data-tech="r">
 <H2 id="vital" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="https://cran.r-project.org/package=vital" target="_blank">Hyndman and O'Hara-Wild's vital: Tidy Analysis Tools for Mortality, Fertility, Migration and Population Data
+href="https://cran.r-project.org/package=vital" target="_blank">Hyndman and O'Hara-Wild's vital Package for R
 <p style="margin:0px;;font-size:15px;font-weight:normal">(mortality, fertility, migration, R package)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
@@ -1149,7 +1149,7 @@ This enables a slightly more nuanced approach to allocating data between dispara
 <li data-topic="migr" data-tech="r">
 <H2 id="SPMMSRCode"</H2>
 <H2 id="MMSRCode" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="https://raw.githubusercontent.com/AppliedDemogToolbox/Hunsinger_MMSRCode/master/MMSRCode.R" target="_blank">R Code for Fitting the Multi-Exponential Model Migration Schedule*
+href="https://raw.githubusercontent.com/AppliedDemogToolbox/Hunsinger_MMSRCode/master/MMSRCode.R" target="_blank">R Code for Fitting the Rogers-Castro Multi-Exponential Model Migration Schedule*
 <p style="margin:0px;font-size:15px;font-weight:normal">(migration, R code)</p></a>
 </font></strong>
 <p style="font-size:15px;display:inline;font-weight:normal">
@@ -1577,7 +1577,7 @@ href="https://raw.githubusercontent.com/AppliedDemogToolbox/Hunsinger_EmplPopHou
 <p style="margin:0px;font-size:15px">
 Planners are often required to prepare or acquire long-term population, employment and housing projections for their areas, and population projections with integrated employment or housing can 
 be a  heavy lift. I had the thought that it shouldn't be too tricky though to just modify 
-<a STYLE="text-decoration:none;display:inline;padding:0"  href="http://www.demog.berkeley.edu/~eddieh/AppliedDemographyToolbox/Pages/BasicProjection.html"  target="_blank">R code for Basic Population Projection</a> 
+<a STYLE="text-decoration:none;display:inline;padding:0"  href="https://applieddemogtoolbox.github.io/#BasicProjection"  target="_blank">R code for Basic Population Projection</a> 
 and make net-migration employment-based with some broadly used parameters (that economists have strong  familiarity with or ability to access quickly), and then simply calculate housing ex-post, 
 and in fact  it wasn't too tricky. Total migration counts are scaled based on working-age migration counts. To see the code work, and a selection of output-graphics, you should be able to simply select-all 
 of the code, copy, and paste into an 
@@ -1590,11 +1590,11 @@ WOMENS SHARE OF TOTAL CIVILIAN EMPLOYMENT, PERSONS  PER HOUSEHOLD, and VACANCY R
 Causal and more-complex models such as this aren't known to generally improve population projection accuracy 
 (<a STYLE="text-decoration:none;display:inline;padding:0" href="https://www.bebr.ufl.edu/sites/default/files/IFJ%201997%20(Simple%20v%20Complex).pdf" target="_blank">informative article by Smith (1997)</a>), 
 but having more variables to work with and assess can be useful. 
-<a STYLE="text-decoration:none;display:inline;padding:0" href="http://shiny.demog.berkeley.edu/eddieh/Alaska2025/" target="_blank">Here</a> is an implementation of it with
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://raw.githubusercontent.com/AppliedDemogToolbox/Hunsinger_EmplPopHousProj/refs/heads/master/ForecastScript_app.R" target="_blank">Here</a> is an implementation of it with
 <a STYLE="text-decoration:none;display:inline;padding:0" href="http://shiny.rstudio.com/" target="_blank">Shiny</a>. 
 If you have any questions, don't hesitate to shoot me an email at 
 <a STYLE="text-decoration:none;display:inline;padding:0" href="mailto:edyhsgr@protonmail.com">edyhsgr@protonmail.com</a>. 
-&ndash;March 2014 (updated May 2022)
+&ndash;March 2014 (updated July 2025)
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2> 
 
